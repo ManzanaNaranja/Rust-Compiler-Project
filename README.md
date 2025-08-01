@@ -1,4 +1,4 @@
-# 🧠 MiniLang Compiler
+# 🧠 Mini Compiler
 
 A mini compiler written in **Rust** for a custom programming language. It includes a **lexer**, **parser**, and **code generation** to an intermediate representation (IR)-style output, similar to three-address code. 
 ---
@@ -17,8 +17,6 @@ A mini compiler written in **Rust** for a custom programming language. It includ
   - Input/output (`read`, `print`)  
   - Function calls and returns  
   - Temporary variable tracking
-  - 
-
 ---
 
 # 📄 Language Syntax
@@ -49,11 +47,16 @@ FUNC INT IF ELSE WHILE BREAK CONTINUE RETURN PRINT READ
 
 ## 💡 Intermediate Output
 
-%func main(%int x, %int y)  
-%int z  
-%add temp0, x, y  
-%mov z, temp0  
-%out z  
+%func main()
+%int i
+%mov i, 0
+while(%int temp0
+%lt temp0, i, 10
+cond(temp0))
+%out i
+%int temp1
+%add temp1, i, 1
+%mov i, temp1
 %endfunc
 
 ## 🛠 Usage
