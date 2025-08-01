@@ -7,15 +7,8 @@
 
 - ✅ Lexical analysis with a custom tokenizer  
 - ✅ Recursive descent parser for expressions, statements, and functions  
-- ✅ Symbol table support with lexical scoping  
-- ✅ Type-aware parsing for `int`, arrays, and functions  
+- ✅ Type Checking and Semantic Error Handling
 - ✅ IR-style code generation (three-address style)  
-- ✅ Support for:
-  - Variable declarations and assignments  
-  - Array indexing and manipulation  
-  - Control flow (`if`, `else`, `while`)  
-  - Input/output (`read`, `print`)  
-  - Function calls and returns  
 ---
 
 ## Valid Code Example
