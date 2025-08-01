@@ -41,14 +41,22 @@ func main() {
 ```
 %func main()
 %int i
+%int j
 %mov i, 0
 while(%int temp0
-%lt temp0, i, 10
+%lt temp0, i, 2
 cond(temp0))
-%out i
-%int temp1
-%add temp1, i, 1
-%mov i, temp1
+%mov j, 0
+while(%int temp1
+%lt temp1, j, 3
+cond(temp1))
+%out j
+%int temp2
+%add temp2, j, 1
+%mov j, temp2
+%int temp3
+%add temp3, i, 1
+%mov i, temp3
 %endfunc
 ```
 
