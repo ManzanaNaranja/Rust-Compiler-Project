@@ -1,9 +1,9 @@
-# 🧠 Mini Compiler
+# Mini Compiler
 
-A mini compiler written in **Rust** for a custom programming language. It includes a **lexer**, **parser**, and **code generation** to an intermediate representation (IR)-style output, similar to three-address code. 
+#### It includes a **lexer**, **parser**, and **code generation** to an intermediate representation, similar to three-address code. 
 ---
 
-## 📦 Features
+## Features
 
 - ✅ Lexical analysis with a custom tokenizer  
 - ✅ Recursive descent parser for expressions, statements, and functions  
@@ -16,12 +16,9 @@ A mini compiler written in **Rust** for a custom programming language. It includ
   - Control flow (`if`, `else`, `while`)  
   - Input/output (`read`, `print`)  
   - Function calls and returns  
-  - Temporary variable tracking
 ---
 
-# 📄 Language Syntax
-
-## ✔️ Valid Code Example
+## Valid Code Example
 
 ```rust
 func main() {
@@ -40,12 +37,11 @@ func main() {
 
 ```
 
-
-## 🔤 Supported Keywords
+## Supported Keywords
 
 FUNC INT IF ELSE WHILE BREAK CONTINUE RETURN PRINT READ
 
-## 💡 Intermediate Output
+## Intermediate Output
 
 %func main()
 %int i
