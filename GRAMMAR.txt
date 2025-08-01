@@ -1,0 +1,42 @@
+prog:
+	| function prog
+function: FUNC ID ( paramlist ) { statements }
+paramlist: INT ID
+	| INT ID, paramlist | epsilon
+statement: statement statements | epsilon
+statement: BREAK ; 
+	| IF expr { statements } ELSE { statements }
+	| IF expr { statements }
+	| WHILE expr { statements }
+	| CONTINUE ;
+	| INT [ expr ] ID ;
+	| INT ID ;
+	| ID = expr ;
+	| INT ID = expr ;
+	| return ;
+	| ID [ expr ] = expr ;
+	| PRINT ( expr ) ;
+	| READ ( ID ) ;
+expr: expr2
+	| expr == expr2
+expr2: expr3
+	| expr2 > expr3
+	| expr2 >= expr3
+	| expr2 < expr3
+	| expr2 >= expr3
+expr3: expr4 
+	| expr3 + expr4
+	| expr3 - expr4
+expr4: expr5
+	| expr4 / expr5
+expr5: highestexpr
+	| call expr5 
+call: ID ( arglist ) ;
+highestexpr: ID | ID [ expr ] 
+	| ID ( arglist )
+	| NUMBER
+	| ( expr )
+arglist: ID
+	| ID, arglist 
+	| expr
+	|
