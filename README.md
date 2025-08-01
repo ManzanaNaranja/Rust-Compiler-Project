@@ -37,10 +37,6 @@ func main() {
 
 ```
 
-## Supported Keywords
-
-FUNC INT IF ELSE WHILE BREAK CONTINUE RETURN PRINT READ
-
 ## Intermediate Output
 ```
 %func main()
@@ -56,14 +52,14 @@ cond(temp0))
 %endfunc
 ```
 
-## 🛠 Usage
+## Usage
 
-### 🔧 Prerequisites
+### Prerequisites
 
 - [Rust](https://www.rust-lang.org/tools/install)
 - [Cargo](https://doc.rust-lang.org/cargo/)
 
-### 🔨 Run
+### Run
 
 ```bash
 git clone https://github.com/ManzanaNaranja/Rust-Compiler-Project.git
