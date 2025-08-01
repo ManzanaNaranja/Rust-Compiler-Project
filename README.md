@@ -42,7 +42,7 @@ func main() {
 FUNC INT IF ELSE WHILE BREAK CONTINUE RETURN PRINT READ
 
 ## Intermediate Output
-
+```
 %func main()
 %int i
 %mov i, 0
@@ -54,6 +54,7 @@ cond(temp0))
 %add temp1, i, 1
 %mov i, temp1
 %endfunc
+```
 
 ## 🛠 Usage
 
